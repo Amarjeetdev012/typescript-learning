@@ -12,13 +12,11 @@
 // console.log('emp', emp);
 // emp.empCode; //Compiler Error
 // * readonly properties
-class Employee {
-    constructor(empCode, name) {
-        this.empCode = empCode;
-        this.name = name;
-    }
-}
-let emp = new Employee(10, "John");
-// emp.empCode = 20; //Compiler Error
-emp.name = 'Bill';
-console.log('emp', emp);
+// class Employee {
+//     constructor(readonly empCode: number, public name: string) {
+//     }
+// }
+// let emp = new Employee(10, "John");
+// // emp.empCode = 20; //Compiler Error
+// emp.name = 'Bill';
+// console.log('emp', emp);
